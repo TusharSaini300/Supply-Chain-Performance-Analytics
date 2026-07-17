@@ -1,0 +1,99 @@
+================================================================================
+SUPPLY CHAIN PERFORMANCE ANALYTICS - BUSINESS INSIGHTS REPORT
+================================================================================
+
+This report presents quantitative insights derived from the analysis of 100 SKUs 
+in the Supply Chain dataset. Every finding is referenced with exact computed values.
+
+--------------------------------------------------------------------------------
+1. PORTFOLIO PROFITABILITY & PRICING CRISIS
+--------------------------------------------------------------------------------
+- Negative Gross Profit: 44 out of 100 SKUs (44%) operate at a negative gross unit 
+  profit, meaning their unit manufacturing cost exceeds their list price.
+- Negative Net Profit: 49 out of 100 SKUs (49%) operate at a negative net unit 
+  profit once unit-level shipping costs are factored in.
+- Extreme Loss Makers: 
+  * SKU4: List Price of $4.81 vs. Manufacturing Cost of $92.07 (Loss: -$87.26/unit)
+  * SKU2: List Price of $11.32 vs. Manufacturing Cost of $30.69 (Loss: -$19.37/unit)
+  * SKU1: List Price of $14.84 vs. Manufacturing Cost of $33.62 (Loss: -$18.77/unit)
+- Actionable Recommendation: Immediately halt production or raise prices on the 
+  44 loss-making SKUs, particularly those with manufacturing costs exceeding $50.
+
+--------------------------------------------------------------------------------
+2. AGGREGATE SUPPLY CHAIN FINANCIAL LEAKAGE
+--------------------------------------------------------------------------------
+- Financial Breakdown:
+  * Total Revenue Generated: $577,604.82
+  * Total Manufacturing Cost of Sold Units: $2,208,830.61 (COGS)
+  * Total Shipping Cost of Sold Units: $259,295.35
+  * Total Route Freight Cost: $52,924.58
+  * Total Supply Chain Cost: $2,521,050.54
+  * Net Supply Chain Profit: -$1,943,445.72
+  * Overall Supply Chain Profit Margin: -336.47%
+- Finding: Manufacturing costs alone are 3.8 times the total revenue generated. 
+  This indicates a highly unsustainable business model.
+- Data Quality Discrepancy Note: The reported 'Revenue generated' is severely 
+  disconnected from 'Price * Number of products sold'. Theoretical revenue (Price * 
+  Sold) equals $2.24M, but reported revenue is only $577k (a 74% gap). This is a 
+  critical anomaly indicating synthetic data generation inconsistencies.
+
+--------------------------------------------------------------------------------
+3. PRODUCT CATEGORY & INVENTORY VELOCITY DYNAMICS
+--------------------------------------------------------------------------------
+- Performance by Category:
+  * Skincare: 40 SKUs, 18,154 units sold, total revenue $230,064.21. It is the most 
+    efficient category with an average Stock-to-Sales ratio of 0.1282.
+  * Cosmetics: 26 SKUs, total revenue $144,386.13, Stock-to-Sales ratio of 0.2112.
+  * Haircare: 34 SKUs, total revenue $203,154.48, Stock-to-Sales ratio of 0.3251.
+- Finding: Haircare inventory is moving 2.5 times slower than Skincare relative to sales 
+  volume. Skincare represents a high-velocity, high-demand category.
+- Recommendation: Shift warehouse storage space and capital from Haircare to Skincare 
+  to reduce holding costs and maximize turnover.
+
+--------------------------------------------------------------------------------
+4. SHIPPING CARRIER & FREIGHT LOGISTICS OPTIMIZATION
+--------------------------------------------------------------------------------
+- Carrier Performance:
+  * Carrier B: Avg Shipping Cost $5.51, Avg Shipping Time 5.30 days, Late Delivery 
+    Rate of 23.26%. (Best Performer)
+  * Carrier A: Avg Shipping Cost $5.55, Avg Shipping Time 6.14 days, Late Delivery 
+    Rate of 39.29%.
+  * Carrier C: Avg Shipping Cost $5.60, Avg Shipping Time 6.03 days, Late Delivery 
+    Rate of 41.38%. (Worst Performer)
+- Finding: Carrier C is the most expensive, slowest, and least reliable carrier, 
+  with a late delivery rate nearly double that of Carrier B.
+- Recommendation: Terminate contracts with Carrier C and shift volume to Carrier B, 
+  which will save costs, decrease transit times, and reduce late deliveries by 43%.
+- Route Costs: Route B is the most expensive route, averaging $595.66 in freight 
+  charges across all transport modes, compared to Route A ($485.48). 
+  Sea shipping is the most cost-effective mode ($335.68 on Route A, $341.78 on Route C) 
+  but incurs longer transit lead times.
+
+--------------------------------------------------------------------------------
+5. QUALITY CONTROL & INSPECTION METRICS
+--------------------------------------------------------------------------------
+- Quality Status: Out of 100 inspections, 23 passed, 36 failed, and 41 are pending. 
+  The high failure rate (36%) indicates major manufacturing defects.
+- Inspection Defect Rates:
+  * Fail: 2.57% average defect rate
+  * Pending: 2.15% average defect rate
+  * Pass: 2.04% average defect rate
+- Finding: The defect rate of passed batches (2.04%) is alarmingly close to failed 
+  batches (2.57%). In a robust quality control process, passed items should have 
+  defect rates near 0%. This suggests that the quality inspection process is 
+  ineffective, or the dataset contains randomized synthetic classifications.
+- Supplier Analysis: Supplier 5 has the highest defect rate (2.67%), while Supplier 1 
+  has the lowest defect rate (1.80%).
+
+--------------------------------------------------------------------------------
+6. STATISTICAL RELATIONSHIPS & NOISE ASSESSMENT
+--------------------------------------------------------------------------------
+- Strongest Non-Trivial Correlations:
+  * Price vs. Manufacturing Lead Time: -0.301 (Moderate negative correlation; 
+    higher-priced products tend to be produced faster).
+  * End-to-End Lead Time vs. Defect Rates: 0.297 (Moderate positive correlation; 
+    longer delivery times correlate with higher defect rates).
+- Statistical Noise: 220 out of 228 correlation pairs (96%) have coefficients 
+  |r| < 0.2. With a small dataset of N=100, these weak correlations are statistical 
+  noise. We should avoid basing business decisions on these random fluctuations.
+================================================================================
