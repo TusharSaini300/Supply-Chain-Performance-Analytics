@@ -72,9 +72,17 @@ python analysis.py
 
 All visualizations are stored in [images/charts/](file:///C:/Users/Tushar%20Saini/.gemini/antigravity/scratch/supply_chain_analytics/images/charts):
 1. **`revenue_vs_volume.png`**: Dual-axis bar/line chart highlighting volume sold and revenue generated across categories.
-2. **`carrier_performance.png`**: Side-by-side comparison of shipping times/costs and late delivery rates by carrier.
-3. **`supplier_quality_leadtime.png`**: Bubble chart (bubble size = production volume) plotting average manufacturing lead time vs. defect rate.
-4. **`correlation_matrix.png`**: Correlation heatmap of all numerical features, with values annotated inside cells.
+   <img width="1200" height="748" alt="image" src="https://github.com/user-attachments/assets/5ef95ee1-678e-49c5-abd2-5dc3b7e26f39" />
+
+3. **`carrier_performance.png`**: Side-by-side comparison of shipping times/costs and late delivery rates by carrier.
+   <img width="1547" height="641" alt="image" src="https://github.com/user-attachments/assets/d41da7bf-5c37-4218-af8b-ea35f447b2a5" />
+
+4. **`supplier_quality_leadtime.png`**: Bubble chart (bubble size = production volume) plotting average manufacturing lead time vs. defect rate.
+   <img width="1196" height="746" alt="image" src="https://github.com/user-attachments/assets/d29bd70b-3739-4b3e-abc1-6b6a80aadd5a" />
+
+6. **`correlation_matrix.png`**: Correlation heatmap of all numerical features, with values annotated inside cells.
+   <img width="1002" height="887" alt="image" src="https://github.com/user-attachments/assets/fad65878-85eb-4a04-9421-24d752086a7b" />
+
 
 ---
 
