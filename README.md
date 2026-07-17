@@ -78,10 +78,3 @@ All visualizations are stored in [images/charts/](file:///C:/Users/Tushar%20Sain
 
 ---
 
-## Career Alignment (Resume Ready)
-This project is built to demonstrate core business analyst skills:
-- **Data Auditing**: Discovering and documenting systematic inconsistencies between columns.
-- **KPI Design**: Defining clear formulas for unit margins, stock-to-sales ratios, and carrier late delivery rates.
-- **Actionable Reporting**: Converting raw data metrics into clear business recommendations.
-
-For typical interview questions and technical walkthroughs of the decisions made in this project, refer to the [interview_prep.md](file:///C:/Users/Tushar%20Saini/.gemini/antigravity/scratch/supply_chain_analytics/interview_prep.md) file.
