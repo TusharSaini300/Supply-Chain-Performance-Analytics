@@ -20,7 +20,6 @@ supply_chain_analytics/
 ├── supply_chain_notebook.ipynb     # Jupyter Notebook version of the analysis
 ├── insights.txt                    # Quantitative business insights report
 ├── requirements.txt                # Python dependencies and versions
-└── interview_prep.md               # Behavioral and technical Q&A prep
 ```
 
 ---
